@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment five</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏥 Hospital Management System </h1>
+
+  <!-- Part 1: Basics -->
+  <section id="basics">
+    <h2>Part 1: Basics</h2>
+    <p id="admission-status"></p>
+  </section>
+
+  <!-- Part 2: Functions -->
+  <section id="functions">
+    <h2>Part 2: Functions</h2>
+    <button onclick="calculateBill()">Calculate Patient Bill</button>
+    <p id="bill"></p>
+
+    <button onclick="toggleEmergency()">Toggle Emergency Alert</button>
+    <p id="emergency-alert" style="display:none; color:red; font-weight:bold;">
+      🚨 Emergency Case Admitted!
+    </p>
+  </section>
+
+  <!-- Part 3: Loops -->
+  <section id="loops">
+    <h2>Part 3: Loops</h2>
+    <button onclick="listPatients()">Show Patients</button>
+    <ul id="patient-list"></ul>
+
+    <button onclick="medicationCountdown()">Medication Countdown</button>
+    <ul id="medication-list"></ul>
+  </section>
+
+  <!-- Part 4: DOM -->
+  <section id="dom">
+    <h2>Part 4: DOM Manipulation</h2>
+    <button id="updateDoctorBtn">Update Doctor on Duty</button>
+    <p id="doctor-duty">Doctor on Duty: Dr. Smith</p>
+
+    <button id="addPatientBtn">Add New Patient</button>
+    <ul id="patientQueue"></ul>
+
+    <button id="themeBtn">Change Theme</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
